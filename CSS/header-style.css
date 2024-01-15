@@ -1,0 +1,210 @@
+:root
+{
+    --substrate-color: #F1F1F1;
+    --main-text-color: #4F4F4F;
+    --main-site-color: #F05454;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body
+{
+    margin: 0;
+}
+
+.sub-header
+{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100vw;
+    height: 48px;
+    background-color: var(--substrate-color);
+    padding: 8px 120px;
+}
+
+.sub-header hr
+{
+    border: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--main-text-color);
+    margin: 0 16px;
+}
+
+.sub-header .adaptive-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1680px;
+    width: 100%;
+    height: 100%;
+}
+
+#phonenumber-and-prfilemenu
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-header .region-selecter
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-text-color);
+}
+
+.sub-header .region-selecter::after
+{
+    content: "";
+    margin-left: 4px;
+    width: 24px;
+    height: 24px;
+    mask-image: url(../images/more-arrow.svg);
+    -webkit-mask-image: url(../images/more-arrow.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: var(--main-text-color);
+}
+
+.sub-header .phone-number
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-site-color);
+}
+
+.sub-header .phone-number::before
+{
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    mask-image: url(../images/phone-icon.svg);
+    -webkit-mask-image: url(../images/phone-icon.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: var(--main-site-color);
+}
+
+.sub-header .profile-menu
+{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    gap: 4px;
+}
+
+.sub-header .profile-menu::before
+{
+    content: "";
+    width: 24px;
+    height: 24px;
+    mask-image: url(../images/account-circle.svg);
+    -webkit-mask-image: url(../images/account-circle.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: var(--main-text-color);
+}
+
+.sub-header .profile-menu::after
+{
+    content: "";
+    width: 24px;
+    height: 24px;
+    mask-image: url(../images/more-arrow.svg);
+    -webkit-mask-image: url(../images/more-arrow.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: var(--main-text-color);
+}
+
+@media screen and (max-width:768px) {
+    .sub-header
+    {
+        padding: 8px 60px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .sub-header
+    {
+        display: none;
+    }
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1680px;
+    width: calc(100vw - 20px);
+    height: 80px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.04),
+                0px 12px 12px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+    padding: 0 21px;
+    box-sizing: border-box;
+}
+
+.navbar .menu-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .logo-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Open Sans';
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 6px;
+    color: var(--main-text-color);
+}
+
+.navbar .navbar-item
+{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+}
