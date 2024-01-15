@@ -1,0 +1,101 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Open Sans';
+    color: var(--main-text-color);
+}
+
+body .content-container
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 1680px;
+    width: 100%;
+}
+
+#company-presentation
+{
+    gap: 23px;
+}
+
+#company-presentation .text-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    gap: 20px;
+}
+
+#company-presentation .text-container .title
+{
+    font-family: 'Montserrat';
+    font-size: 60px;
+    text-shadow: 0px 2px 0px rgba(34, 34, 34, 0.10);
+    font-weight: 700;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+}
+
+#company-presentation .text-container .title span
+{
+    color: var(--main-site-color);
+    text-shadow: none;
+}
+
+#company-presentation .text-container .text
+{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#company-presentation .text-container .button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: var(--main-site-color);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+#company-presentation .slider
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#company-presentation .slider .slider-card
+{
+    position: absolute;
+    width: 791px;
+    height: 404px;
+    background-color: var(--substrate-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#company-presentation .slider .slider-card .background
+{
+    position: absolute;
+    top: -15%;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#company-presentation .slider .slider-card .logo
+{
+    position: absolute;
+    bottom: 36px;
+    left: 31px;
+    height: 50px;
+    z-index: 1;
+}

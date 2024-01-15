@@ -1,23 +1,17 @@
-:root
-{
-    --substrate-color: #F1F1F1;
-    --main-text-color: #4F4F4F;
-    --main-site-color: #F05454;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
-}
-
 header
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Open Sans';
 }
 
 body
+{
+    margin: 0;
+}
+
+p
 {
     margin: 0;
 }
@@ -63,7 +57,6 @@ body
 {
     display: flex;
     align-items: center;
-    font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
     color: var(--main-text-color);
@@ -75,8 +68,8 @@ body
     margin-left: 4px;
     width: 24px;
     height: 24px;
-    mask-image: url(../images/more-arrow.svg);
-    -webkit-mask-image: url(../images/more-arrow.svg);
+    mask-image: url(../images/icons/more-arrow.svg);
+    -webkit-mask-image: url(../images/icons/more-arrow.svg);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-position: center;
@@ -88,7 +81,6 @@ body
 {
     display: flex;
     align-items: center;
-    font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 600;
     color: var(--main-site-color);
@@ -100,8 +92,8 @@ body
     width: 20px;
     height: 20px;
     margin-right: 8px;
-    mask-image: url(../images/phone-icon.svg);
-    -webkit-mask-image: url(../images/phone-icon.svg);
+    mask-image: url(../images/icons/phone-icon.svg);
+    -webkit-mask-image: url(../images/icons/phone-icon.svg);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-position: center;
@@ -125,8 +117,8 @@ body
     content: "";
     width: 24px;
     height: 24px;
-    mask-image: url(../images/account-circle.svg);
-    -webkit-mask-image: url(../images/account-circle.svg);
+    mask-image: url(../images/icons/account-circle.svg);
+    -webkit-mask-image: url(../images/icons/account-circle.svg);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-position: center;
@@ -139,8 +131,8 @@ body
     content: "";
     width: 24px;
     height: 24px;
-    mask-image: url(../images/more-arrow.svg);
-    -webkit-mask-image: url(../images/more-arrow.svg);
+    mask-image: url(../images/icons/more-arrow.svg);
+    -webkit-mask-image: url(../images/icons/more-arrow.svg);
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-position: center;
@@ -148,14 +140,14 @@ body
     background-color: var(--main-text-color);
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .sub-header
     {
-        padding: 8px 60px;
+        padding: 8px 42px;
     }
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width:900px) {
     .sub-header
     {
         display: none;
@@ -164,18 +156,20 @@ body
 
 .navbar
 {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     max-width: 1680px;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 116px);
     height: 80px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.04),
                 0px 12px 12px 0px rgba(0, 0, 0, 0.04);
     border-radius: 4px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 58px;
+    margin-right: 58px;
     margin-top: 25px;
+    margin-bottom: 63px;
     padding: 0 21px;
     box-sizing: border-box;
 }
@@ -202,9 +196,158 @@ body
 
 .navbar .navbar-item
 {
-    font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 20px;
+}
+
+.navbar .navbar-item:nth-child(2)
+{
+    color: var(--main-site-color);
+}
+
+.navbar .extra-container
+{
+    position: absolute;
+    right: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar .extra-container .mini-button
+{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.navbar .extra-container #shoping-card
+{
+    background-color: var(--main-site-color);
+    mask-image: url(../images/icons/regular-shopping-cart.svg);
+    -webkit-mask-image: url(../images/icons/regular-shopping-cart.svg);
+}
+
+.navbar .extra-container #search
+{
+    display: none;
+    background-color: var(--main-site-color);
+    mask-image: url(../images/icons/search-icon.svg);
+    -webkit-mask-image: url(../images/icons/search-icon.svg);
+}
+
+.navbar .extra-container #burger
+{
+    display: none;
+    background-color: var(--main-site-color);
+    mask-image: url(../images/icons/burger-icon.svg);
+    -webkit-mask-image: url(../images/icons/burger-icon.svg);
+}
+
+.navbar .extra-container .button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    width: 355px;
+    background-color: var(--main-site-color);
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .navbar
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 44px;
+        width: calc(100vw - 100px);
+        height: 56px;
+        padding: 0 15px;
+    }
+
+    .navbar .logo-container
+    {
+        flex-direction: column;
+    }
+
+    .navbar .logo-container p
+    {
+        position: relative;
+        height: 14px;
+        left: 3px;
+    }
+
+    .navbar .navbar-item
+    {
+        display: none;
+    }
+
+    .navbar .extra-container
+    {
+        right: 16px;
+    }
+
+    .navbar .extra-container .mini-button
+    {
+        width: 24px;
+        height: 24px;
+    }
+
+    .navbar .extra-container #shoping-card
+    {
+        display: none;
+    }
+
+    .navbar .extra-container #search
+    {
+        display: flex;
+    }
+
+    .navbar .extra-container #burger
+    {
+        display: flex;
+    }
+
+    .navbar .extra-container .button
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar
+    {
+        margin-left: 42px;
+        margin-right: 42px;
+        margin-top: 24px;
+        width: calc(100vw - 84px);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .navbar
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100vw - 20px);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .navbar
+    {
+        margin-top: 10px;
+    }
 }
