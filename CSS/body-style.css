@@ -49,6 +49,7 @@ body .content-container
 {
     font-size: 24px;
     font-weight: 400;
+    line-height: 38px;
 }
 
 #company-presentation .text-container .button
@@ -98,4 +99,26 @@ body .content-container
     left: 31px;
     height: 50px;
     z-index: 1;
+}
+
+#company-presentation .slider .slide-index-viewer
+{
+    position: absolute;
+    top: 420px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#company-presentation .slider .slide-index-viewer .point
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: var(--main-site-color);
+}
+
+#company-presentation .slider .slide-index-viewer .point:first-child
+{
+    width: 40px;
 }
