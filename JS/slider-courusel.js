@@ -13,33 +13,12 @@ function nextCard()
     next_slide = slide_index + 1
     if (next_slide === slides_count) next_slide = 0
 
-    animate()
+    slides[slide_index].classList.remove('select')
+    slides[next_slide].classList.add('select')
+    viewer_points[slide_index].classList.remove('select')
+    viewer_points[next_slide].classList.add('select')
 
     slide_index = next_slide
 }
 
-function linear(timeFraction) {
-    return timeFraction;
-}
-
-function animate({timing, draw, duration})
-{
-    let start = performance.now();
-  
-    requestAnimationFrame(function animate(time) {
-        // timeFraction изменяется от 0 до 1
-        let timeFraction = (time - start) / duration;
-        if (timeFraction > 1) timeFraction = 1;
-  
-        // вычисление текущего состояния анимации
-        let progress = timing(timeFraction);
-  
-        draw(progress); // отрисовать её
-  
-        if (timeFraction < 1) {
-            requestAnimationFrame(animate);
-        }
-    });
-}
-
-setInterval(nextCard, 3000)
+setInterval(nextCard, 8000)

@@ -6,6 +6,7 @@ body
     margin: 0;
     font-family: 'Open Sans';
     color: var(--main-text-color);
+    overflow-x: hidden;
 }
 
 body .content-container
@@ -13,7 +14,9 @@ body .content-container
     display: flex;
     flex-direction: row;
     max-width: 1680px;
-    width: 100%;
+    width: calc(100% - 53px * 2);
+    margin-left: 58px;
+    margin-right: 58px;
 }
 
 #company-presentation
@@ -77,23 +80,26 @@ body .content-container
 #company-presentation .slider .slider-card
 {
     position: absolute;
-    width: 791px;
+    left: -200px;
+    z-index: -1;
+    display: flex;
+    opacity: 0;
+    max-width: 791px;
+    width: 100%;
     height: 404px;
     background-color: var(--substrate-color);
+    background-position: center;
+    background-size: cover;
     border-radius: 4px;
     overflow: hidden;
-}
-
-#company-presentation .slider .slider-card .background
-{
-    position: absolute;
-    top: -15%;
-    border-radius: 4px;
-    width: 100%;
+    transform: scale(0.5);
+    filter: brightness(0.5);
+    transition-property: opacity, transform, left, z-index, filter, right;
+    transition-duration: 1s;
 }
 
 #company-presentation .slider .slider-card .logo
-{
+{   
     position: absolute;
     bottom: 36px;
     left: 31px;
@@ -116,9 +122,60 @@ body .content-container
     height: 10px;
     border-radius: 8px;
     background-color: var(--main-site-color);
+    transition: 1s;
 }
 
-#company-presentation .slider .slide-index-viewer .point:first-child
+.slider > .select
 {
-    width: 40px;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    transform: scale(1) !important;
+    filter: none !important;
+    transition-property: left, transform, opacity, filter;
+    transition-duration: 1s;
+}
+
+.slider > .select + .slider-card,
+.slider:has(.select:last-child) .slider-card:first-child
+{
+    opacity: 1 !important;
+    transform: scale(0.9) !important;
+    left: calc(100% - 100px) !important;
+    z-index: 0 !important;
+    transition-property: left, opacity, filter;
+    transition-duration: 1s;
+}
+
+.slider .slide-index-viewer .select
+{
+    width: 40px !important;
+    transition: 1s;
+}
+
+@media screen and (min-width: 1400px)
+{
+    .slider > .select + .slider-card,
+    .slider:has(.select:last-child) .slider-card:first-child
+    {
+        left: 600px !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body .content-container
+    {
+        width: calc(100% - 42px * 2);
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body .content-container
+    {
+        width: calc(100% - 10px * 2);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
