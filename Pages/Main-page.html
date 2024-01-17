@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../CSS/fonts.css">
     <link rel="stylesheet" href="../CSS/colors.css">
     <link rel="stylesheet" href="../CSS/Content-containers/company-presentation.css">
+    <link rel="stylesheet" href="../CSS/Content-containers/selection-by-car.css">
     <title>Document</title>
 </head>
+<div class="blackout-screen"></div>
 <header>
     <div class="sub-header">
         <div class="adaptive-container">
@@ -93,7 +95,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="content-container" id="selection-by-car">
+    <div class="content-container" id="selection-by-car">
         <div class="text-container">
             <div class="title">Подбор по автомобилю</div>
             <div class="text">
@@ -101,8 +103,23 @@
                 помжет сильно сузить ассортимент и ускорит выбор товаров.
             </div>
         </div>
-    </div> -->
+        <div class="selectors-container">
+            <div class="selector" value="#" placeholder="Выберите марку автомобиля">
+                <div class="select-item">
+                    <div class="value"></div>
+                    <div class="clear"></div>
+                </div>
+                <div class="items-list">
+                    <div value="Volkswagen" class="item">
+                        <img src="../images/makes/Volkswagen.svg">
+                        Volkswagen
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="../JS/Libraries/jquery-3.7.0.min.js"></script>
 <script src="../JS/dropdown-menu.js"></script>
 <script src="../JS/slider-courusel.js"></script>
 </html>

@@ -3,4 +3,7 @@
     --substrate-color: #F1F1F1;
     --main-text-color: #4F4F4F;
     --main-site-color: #F05454;
+
+    --input-border-default: #D9D9D9;
+    --input-border-selected: #111111A3;
 }

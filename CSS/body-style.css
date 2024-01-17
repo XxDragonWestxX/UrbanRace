@@ -10,6 +10,18 @@ body
     height: 2000px;
 }
 
+.blackout-screen
+{
+    display: none;
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.25;
+    z-index: 2;
+}
+
 body .content-container
 {
     display: flex;
