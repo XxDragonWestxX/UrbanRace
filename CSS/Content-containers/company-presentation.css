@@ -1,0 +1,251 @@
+#company-presentation
+{
+    gap: 23px;
+}
+
+#company-presentation .text-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    gap: 20px;
+}
+
+#company-presentation .text-container .title
+{
+    font-family: 'Montserrat';
+    font-size: 60px;
+    text-shadow: 0px 2px 0px rgba(34, 34, 34, 0.10);
+    font-weight: 700;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+}
+
+#company-presentation .text-container .title span
+{
+    color: var(--main-site-color);
+    text-shadow: none;
+}
+
+#company-presentation .text-container .text
+{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+#company-presentation .text-container .button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 355px;
+    height: 52px;
+    border-radius: 4px;
+    background-color: var(--main-site-color);
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+#company-presentation .slider
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    height: 430px;
+}
+
+#company-presentation .slider .slider-card
+{
+    position: absolute;
+    left: -200px;
+    z-index: -1;
+    display: flex;
+    opacity: 0;
+    max-width: 791px;
+    width: 100%;
+    height: 404px;
+    background-color: var(--substrate-color);
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    overflow: hidden;
+    transform: scale(0.5);
+    filter: brightness(0.5);
+    transition-property: opacity, transform, left, z-index, filter, right;
+    transition-duration: 1s;
+    font-family: 'Jost';
+}
+
+#company-presentation .slider .slider-card .container
+{   
+    position: absolute;
+    bottom: 5%;
+    left: 31px;
+    z-index: 1;
+}
+
+#company-presentation .slider .slider-card .container .title
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+#company-presentation .slider .slider-card .container .sale
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    font-size: 28px;
+    gap: 24px;
+}
+
+#company-presentation .slider .slider-card .container .logo
+{
+    height: 48px;
+}
+
+#company-presentation .slider .slide-index-viewer
+{
+    position: absolute;
+    top: 420px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#company-presentation .slider .slide-index-viewer .point
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background-color: var(--main-site-color);
+    transition: 1s;
+}
+
+#company-presentation .slider > .select
+{
+    opacity: 1 !important;
+    z-index: 1 !important;
+    left: 0 !important;
+    transform: scale(1) !important;
+    filter: none !important;
+    transition-property: left, transform, opacity, filter;
+    transition-duration: 1s;
+}
+
+#company-presentation .slider > .select + .slider-card,
+#company-presentation .slider:has(.select:last-child) .slider-card:first-child
+{
+    opacity: 1 !important;
+    transform: scale(0.9) !important;
+    left: calc(100% - 100px) !important;
+    z-index: 0 !important;
+    transition-property: left, opacity, filter, position;
+    transition-duration: 1s;
+}
+
+#company-presentation .slider .slide-index-viewer .select
+{
+    width: 40px !important;
+    transition: 1s;
+}
+
+@media screen and (min-width: 1400px)
+{
+    #company-presentation .slider > .select + .slider-card,
+    #company-presentation .slider:has(.select:last-child) .slider-card:first-child
+    {
+        left: 600px !important;
+    }
+}
+
+@media screen and (max-width:1200px)
+{
+    #company-presentation
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #company-presentation .text-container
+    {
+        width: 100%;
+    }
+
+    #company-presentation .slider
+    {
+        display: flex;
+        justify-content: center;
+        height: calc(50vw + 30px);
+    }
+
+    #company-presentation .slider .slide-index-viewer
+    {
+        top: calc(50vw + 20px);
+    }
+
+    #company-presentation .slider .slider-card
+    {
+        height: 50vw !important;
+    }
+
+    #company-presentation .slider > .select
+    {
+        max-width: 95%;
+        left: 2.5% !important;
+    }
+
+    #company-presentation .slider .prev
+    {
+        opacity: 1 !important;
+        transform: scale(0.9) !important;
+        left: calc(0% - 50vw) !important;
+        z-index: 0 !important;
+        transition-property: left, opacity, filter, position, transform;
+        transition-duration: 1s;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #company-presentation .text-container
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #company-presentation .slider
+    {
+        justify-content: start;
+    }
+
+    #company-presentation .slider .slide-index-viewer
+    {
+        top: calc(50vw + 10px);
+    }
+}
+
+@media screen and (max-width:480px) {
+    #company-presentation .slider .slider-card .container .logo
+    {
+        height: 23px;
+    }
+
+    #company-presentation .slider .slider-card .container .title
+    {
+        gap: 3px;
+    }
+
+    #company-presentation .slider .slider-card .container .sale
+    {
+        gap: 6px
+    }
+}

@@ -7,3 +7,8 @@
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: 'Jost';
+    src: url(../fonts/Jost-VariableFont_wght.ttf);
+}
