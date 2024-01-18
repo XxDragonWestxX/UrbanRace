@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../CSS/colors.css">
     <link rel="stylesheet" href="../CSS/Content-containers/company-presentation.css">
     <link rel="stylesheet" href="../CSS/Content-containers/selection-by-car.css">
+    <link rel="stylesheet" href="../CSS/Content-containers/ask-a-question-banner.css">
     <title>Document</title>
 </head>
 <div class="blackout-screen"></div>
@@ -147,6 +148,27 @@
             </div>
             <div class="button">Подобрать</div>
             <img class="background" height="610px" src="../images/photos/background-car.png">
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="ask-a-question-banner">
+            <form>
+                <div class="title">Мы готовы ответить на все ваши вопросы!</div>
+                <label class="input">
+                    Email
+                    <input type="email" placeholder="example@email.com" required>
+                    <div class="input-msg"></div>
+                </label>
+                <label class="input">
+                    Телефон
+                    <select class="country-selecter">
+                        <option value=""></option>
+                    </select>
+                    <input type="text" placeholder="888 888 88 88" required>
+                    <div class="input-msg"></div>
+                </label>
+                <input type="submit" name="question">
+            </form>
         </div>
     </div>
 </body>
