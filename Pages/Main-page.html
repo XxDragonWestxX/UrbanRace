@@ -152,8 +152,8 @@
     </div>
     <div class="content-container">
         <div class="ask-a-question-banner">
-            <form>
-                <div class="title">Мы готовы ответить на все ваши вопросы!</div>
+            <div class="title">Мы готовы ответить на все ваши вопросы!</div>
+                <form>
                 <label class="input">
                     Email
                     <input type="email" placeholder="example@email.com" required>
@@ -161,13 +161,11 @@
                 </label>
                 <label class="input">
                     Телефон
-                    <select class="country-selecter">
-                        <option value=""></option>
-                    </select>
-                    <input type="text" placeholder="888 888 88 88" required>
+                    <div class="country-selecter">+7</div>
+                    <input type="tel" placeholder="888 888 88 88" required>
                     <div class="input-msg"></div>
                 </label>
-                <input type="submit" name="question">
+                <input type="submit" name="question" value="Задать вопрос">
             </form>
         </div>
     </div>
