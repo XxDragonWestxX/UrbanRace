@@ -7,7 +7,11 @@ body
     font-family: 'Open Sans';
     color: var(--main-text-color);
     overflow-x: hidden;
-    height: 2000px;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 .blackout-screen

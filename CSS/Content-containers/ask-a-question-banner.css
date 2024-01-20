@@ -116,6 +116,11 @@
 }
 
 @media screen and (max-width:1800px) {
+    .ask-a-question-banner
+    {
+        padding: 34px 22px 34px 30px;
+    }
+
     .ask-a-question-banner form
     {
         gap: 10px;

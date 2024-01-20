@@ -1,0 +1,360 @@
+.catigories-banner
+{
+    display: flex;
+    width: 100%;
+    gap: 28px;
+    margin-top: 93px;
+    justify-content: center;
+}
+
+.catigories-banner .vertical-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.catigories-banner .text-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    width: 570px;
+}
+
+.catigories-banner .text-container .title
+{
+    color: var(--main-site-color);
+    font-family: 'Montserrat';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+}
+
+.catigories-banner .text-container .text
+{
+    color: var(--main-site-color);
+    color: var(--main-text-color);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.catigories-banner .buttons-container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.catigories-banner .buttons-container .background-image
+{
+    position: absolute;
+    background-image: url(../../images/photos/car-tire.png);
+    background-size: cover;
+    opacity: 0.15;
+    height: 510px;
+    width: 200vw;
+    background-size: 880px;
+    background-repeat: no-repeat;
+    aspect-ratio: 1/1;
+    z-index: -5;
+    top: -480px;
+    left: -380px;
+}
+
+.catigories-banner .buttons-container .button
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px 24px;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.catigories-banner .buttons-container .button:nth-child(1):before,
+.catigories-banner .buttons-container .button:nth-child(2):before
+{
+    content: '';
+    position: absolute;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.catigories-banner .buttons-container .button:nth-child(1):before,
+.catigories-banner .buttons-container .button:nth-child(2):before
+{
+    background-image: url(../../images/photos/car-tire.png);
+    background-size: cover;
+    opacity: 0.15;
+    height: 880px;
+    aspect-ratio: 1/1;
+    left: -370px;
+}
+
+.catigories-banner .buttons-container .button:nth-child(1):before
+{
+    top: -480px;
+}
+
+.catigories-banner .buttons-container .button:nth-child(2):before
+{
+    top: -590px;
+}
+
+.catigories-banner .buttons-container .button .title
+{
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    width: calc(100% - 89px);
+}
+
+.catigories-banner .buttons-container .button .action-text
+{
+    display: flex;
+    color: var(--main-site-color);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    align-items: center;
+}
+
+.catigories-banner .buttons-container .button .action-text::after
+{
+    content: "";
+    background-color: var(--main-site-color);
+    height: 12px;
+    min-width: 7.4px;
+    mask-image: url(../../images/icons/arrow-right.svg);
+    -webkit-mask-image: url(../../images/icons/arrow-right.svg);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    margin-left: 12px;
+}
+
+.catigories-banner .buttons-container .button img
+{
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    right: 15px;
+}
+
+.catigories-banner .catigories-container
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catigories-banner .catigories-container .mobile-title
+{
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.catigories-banner .catigories-container .mobile-title .title
+{
+    color: #151D0C;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.09px;
+}
+
+.catigories-banner .catigories-container .mobile-title .more-button
+{
+    color: var(--main-site-color);
+    text-align: right;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.182px;
+}
+
+.catigories-banner .catigories-container .center-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 11px;
+}
+
+.catigories-banner .catigories-container .category
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    box-shadow: 0px 28px 104px 0px rgba(41, 41, 41, 0.15); 
+    padding: 6px;
+    box-sizing: border-box; 
+    gap: 17px;
+    cursor: pointer;
+}
+
+.catigories-banner .catigories-container .category img
+{
+    height: 75px;
+}
+
+.catigories-banner .catigories-container .category .title
+{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    color: #151D0C;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.07px;
+}
+
+@media screen and (max-width:1801px)
+{
+    .catigories-banner .text-container
+    {
+        max-width: 570px;
+        width: 100%;
+    }
+
+    .catigories-banner .catigories-container .center-container
+    {
+        width: 899px;
+    }
+}
+
+@media screen and (max-width:1620px)
+{
+    .catigories-banner .catigories-container .center-container
+    {
+        width: 717px;
+    }
+}
+
+@media screen and (max-width:1440px)
+{
+    .catigories-banner .catigories-container .mobile-title
+    {
+        display: flex;
+        order: 2;
+        margin-top: 24px;
+        justify-content: end;
+    }
+
+    .catigories-banner .catigories-container .mobile-title .title
+    {
+        display: none;
+    }
+
+    .catigories-banner .catigories-container .center-container
+    {
+        width: 535px;
+    }
+
+    .catigories-banner .catigories-container .category:nth-child(n+10)
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    .catigories-banner .catigories-container .center-container
+    {
+        width: 353px;
+    }
+
+    .catigories-banner .catigories-container .category:nth-child(n+5)
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px)
+{
+    .catigories-banner
+    {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .catigories-banner .text-container
+    {
+        display: none;
+    }
+
+    .catigories-banner .button:first-child
+    {
+        display: none;
+    }
+
+    .catigories-banner .buttons-container
+    {
+        width: 100%;
+    }
+
+    .catigories-banner .buttons-container .button
+    {
+        width: 100%;
+    }
+
+    .catigories-banner .buttons-container .button:nth-child(2):before
+    {
+        top: -480px;
+    } 
+
+    .catigories-banner .catigories-container .center-container
+    {
+        width: 100%;
+    }
+
+    .catigories-banner .catigories-container .category
+    {
+        width: calc(50% - 11px/2) !important;
+    }
+
+    .catigories-banner .catigories-container .category img
+    {
+        width: 50%;
+        height: 50%;
+    }
+
+    .catigories-banner .catigories-container .mobile-title
+    {
+        order: 0;
+        justify-content: space-between;
+    }
+
+    .catigories-banner .catigories-container .mobile-title .title
+    {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:355px)
+{
+    .catigories-banner .buttons-container .button .action-text
+    {
+        width: 130px;
+    }
+}

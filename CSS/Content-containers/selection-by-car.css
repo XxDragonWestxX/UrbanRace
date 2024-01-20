@@ -39,7 +39,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 40vw;
-    height: 120px;
     max-width: 725px;
     gap: 15px
 }
@@ -239,6 +238,7 @@ body:has(#selection-by-car .selector.active) .blackout-screen
     align-items: center;
     color: var(--input-border-default);
     box-sizing: border-box;
+    background-color: white;
 }
 
 #selection-by-car .mobile-selector::before
@@ -257,7 +257,15 @@ body:has(#selection-by-car .selector.active) .blackout-screen
     -webkit-mask-position: center;
 }
 
-@media screen and (max-width:1919px) {
+@media screen and (min-width: 1860px) {
+    #selection-by-car .selectors-container
+    {
+        height: 120px !important;
+    }
+}
+
+@media screen and (max-width: 1860px) {
+
     #selection-by-car .selectors-container
     {
         height: 100% !important;
