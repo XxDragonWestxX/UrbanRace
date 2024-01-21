@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libraries/swiper-bundle.min.css">
     <link rel="stylesheet" href="../CSS/header-style.css">
     <link rel="stylesheet" href="../CSS/body-style.css">
     <link rel="stylesheet" href="../CSS/fonts.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="../CSS/Content-containers/selection-by-car.css">
     <link rel="stylesheet" href="../CSS/Content-containers/ask-a-question-banner.css">
     <link rel="stylesheet" href="../CSS/Content-containers/catigories-banner.css">
+    <link rel="stylesheet" href="../CSS/Content-containers/news-banner.css">
     <title>Document</title>
 </head>
 <div class="blackout-screen"></div>
@@ -257,9 +259,102 @@
             </div>
         </div>
     </div>
+    <div class="content-container news-banner">
+        <div class="background-image" style="background-image: url(../images/photos/Photo1.jpg);"></div>
+        <div class="mobile-title">
+            <div class="title">Актуальное</div>
+            <a href="" class="more-button">Показать все</a>
+        </div>
+        <div class="title">Актуальное</div>
+        <form class="buttons-container">
+            <label class="radio-label">
+                <input name="news-filter" type="radio" checked>
+                <span class="radio-title">Все</span>
+            </label>
+            <label class="radio-label">
+                <input name="news-filter" type="radio">
+                <span class="radio-title">Новости</span>
+            </label>
+            <label class="radio-label">
+                <input name="news-filter" type="radio">
+                <span class="radio-title">Акции</span>
+            </label>
+        </form>
+        <div class="news-container swiper">
+            <div class="swiper-wrapper">
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
-<script src="../JS/Libraries/jquery-3.7.0.min.js"></script>
+<script src="../libraries/jquery-3.7.0.min.js"></script>
 <script src="../JS/dropdown-menu.js"></script>
 <script src="../JS/slider-courusel.js"></script>
-
+<script src="../libraries/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".news-container", {
+        spaceBetween: 10,
+        freeMode: true,
+        slidesPerView: "auto",
+        breakpoints: {
+            500: {
+                enabled: true
+            }
+        }
+    });
+</script>
 </html>
