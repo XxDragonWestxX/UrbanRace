@@ -52,6 +52,7 @@
     width: 355px;
     height: 45px;
     gap: 16px;
+    cursor: pointer;
 }
 
 #selection-by-car .selector.active

@@ -95,6 +95,7 @@
     box-sizing: border-box;
     gap: 9px;
     cursor: pointer;
+    margin-bottom: 100px;
 }
 
 .news-banner .news-container .news-card .preview-image

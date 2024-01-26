@@ -60,6 +60,7 @@ p
     font-size: 14px;
     font-weight: 400;
     color: var(--main-text-color);
+    cursor: pointer;
 }
 
 .sub-header .region-selecter::after
@@ -110,6 +111,7 @@ p
     font-weight: 600;
     color: var(--main-text-color);
     gap: 4px;
+    cursor: pointer;
 }
 
 .sub-header .profile-menu::before
@@ -201,6 +203,7 @@ p
     font-weight: 600;
     text-transform: uppercase;
     line-height: 20px;
+    color: var(--main-text-color);
 }
 
 .navbar .navbar-item:nth-child(2)
@@ -305,6 +308,7 @@ p
     {
         width: 24px;
         height: 24px;
+        cursor: pointer;
     }
 
     .navbar .extra-container #shoping-card
