@@ -3,9 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/header-style.css">
+    <link rel="stylesheet" href="../CSS/body-style.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/colors.css">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../CSS/Content-containers/ask-a-question-banner.css">
+    <link rel="stylesheet" href="../CSS/Content-containers/catigories-banner.css">
+    <link rel="stylesheet" href="../CSS/Content-containers/news-banner.css">
+    <link rel="stylesheet" href="../libraries/swiper-bundle.min.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <div class="sub-header">
+            <div class="adaptive-container">
+                <div class="region-selecter">Регион: Москва</div>
+                <div class="container" id="phonenumber-and-prfilemenu">
+                    <div class="phone-number">+32 (0) 15 28 76 67</div>
+                    <hr>
+                    <div class="profile-menu">Личный кабинет</div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="menu-container">
+                <a href="../Pages/Main-page.html" class="logo-container">
+                    <img src="../images/icons/logo.svg">
+                    <p>Магазин<br>автотюнинга</p>
+                </a>
+                <a href="../Pages/Main-page.html" class="navbar-item">Главная</a>
+                <a href="" class="navbar-item">Каталог</a>
+                <a href="" class="navbar-item">Информация</a>
+                <a href="" class="navbar-item">Еще...</a>
+                <div class="extra-container">
+                    <div class="mini-button" id="search"></div>
+                    <div class="mini-button" id="burger"></div>
+                    <a href="" class="mini-button" id="shoping-card"></a>
+                    <a href="" class="button">Подбор по автомобилю</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-container catigories-banner">
+        <div class="vertical-container">
+            <div class="text-container">
+                <div class="title">Категории товаров</div>
+                <div class="text">Выберите категорию котоаря вас интересует. Тут есть все – от ГБЦ до футболки с
+                    логотипом БМВ М повер-рейнджерс</div>
+            </div>
+            <div class="buttons-container">
+                <a href="" class="button">
+                    <div class="title">Показать все товары</div>
+                    <div class="action-text">Перейти в каталог</div>
+                </a>
+                <a href="" class="button">
+                    <div class="title">Не знаете что выбрать?</div>
+                    <div class="action-text">Получить консультацию</div>
+                    <img src="../images/photos/instruments-photo.png">
+                </a>
+                <div class="background-image"></div>
+            </div>
+        </div>
+        <div class="catigories-container all-catigories-view">
+            <div class="mobile-title">
+                <div class="title">Категории</div>
+            </div>
+            <div class="center-container">
+                <div class="category">
+                    <img src="../images/categories-icons/turbo.png">
+                    <div class="title">Трубины и турбокомплекты</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/brake-disk.png">
+                    <div class="title">Тормоза и тормозные системы</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/cooling.png">
+                    <div class="title">Охлаждение</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/pendant.png">
+                    <div class="title">Подвеска</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/cap.png">
+                    <div class="title">Подарки и мерч</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/cap.png">
+                    <div class="title">Другое</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/engine.png">
+                    <div class="title">Двигатель</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/transmission.png">
+                    <div class="title">Трансмиссия</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/fuel-system.png">
+                    <div class="title">Топливные системы</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/seat.png">
+                    <div class="title">Интерьер и экстерер</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/wheel.png">
+                    <div class="title">Шины и диски</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/cap.png">
+                    <div class="title">Оригинальные запчасти</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/fuel-system.png">
+                    <div class="title">Выпускная система</div>
+                </div>
+                <div class="category">
+                    <img src="../images/categories-icons/intake-system.png">
+                    <div class="title">Впускные системы</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-container news-banner">
+        <div class="background-image" style="background-image: url(../images/photos/Photo1.jpg);"></div>
+        <div class="mobile-title">
+            <div class="title">Актуальное</div>
+            <a href="" class="more-button">Показать все</a>
+        </div>
+        <div class="title">Актуальное</div>
+        <form class="buttons-container">
+            <label class="radio-label">
+                <input name="news-filter" type="radio" checked>
+                <span class="radio-title">Все</span>
+            </label>
+            <label class="radio-label">
+                <input name="news-filter" type="radio">
+                <span class="radio-title">Новости</span>
+            </label>
+            <label class="radio-label">
+                <input name="news-filter" type="radio">
+                <span class="radio-title">Акции</span>
+            </label>
+        </form>
+        <div class="news-container swiper">
+            <div class="swiper-wrapper">
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo5.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="news-card swiper-slide">
+                    <div class="preview-image" style="background-image: url(../images/photos/Photo4.jpg);"></div>
+                    <div class="title">Ломается ли ваг? После тюнинга</div>
+                    <div class="text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после
+                        stage 3 REVO</div>
+                    <div class="about-container">
+                        <div class="date">12 января</div>
+                        <div class="type">Видеоблог</div>
+                    </div>
+                </div>
+                <div class="more-button"><span>Показать еще</span></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="content-container">
+            <div class="ask-a-question-banner">
+                <div class="title">Мы готовы ответить на все ваши вопросы!</div>
+                <form>
+                    <label class="input">
+                        Email
+                        <input type="email" placeholder="example@email.com" required>
+                        <div class="input-msg"></div>
+                    </label>
+                    <label class="input">
+                        Телефон
+                        <div class="country-selecter">+7</div>
+                        <input type="tel" placeholder="888 888 88 88" required>
+                        <div class="input-msg"></div>
+                    </label>
+                    <input type="submit" name="question" value="Задать вопрос">
+                </form>
+            </div>
+        </div>
+        <div class="content-container mobile-footer-menu">
+            <div class="logo-container">
+                <img src="../images/icons/logo.svg">
+                <div class="text">
+                    <span class="title">
+                        <span>
+                            urban
+                        </span>
+                        race
+                    </span>
+                    - магазин автотюнинга
+                </div>
+            </div>
+            <div class="menu">
+                <a href="" class="item">Главная</a>
+                <a href="" class="item">Каталог</a>
+                <a href="" class="item">Новости</a>
+                <a href="" class="item">Информация</a>
+                <a href="" class="item">Связаться с нами</a>
+                <a href="" class="item">Контакты</a>
+            </div>
+        </div>
+        <div class="content-container footer-menu">
+            <div class="about-company">
+                <a href="" class="logo-container">
+                    <img src="../images/icons/logo.svg">
+                    <p>Магазин<br>автотюнинга</p>
+                </a>
+                <div class="socials-container">
+                    <a href=""><img src="../images/socials/instagram.svg"></a>
+                    <a href=""><img src="../images/socials/youtube.svg"></a>
+                    <a href=""><img src="../images/socials/telegram.svg"></a>
+                </div>
+                <div class="text-container">Интернет-магазин тюнинг-комплектующих для современных автомобилей Audi, Skoda,
+                    Seat, Skoda, Porsche, BMW, Mercedes-Benz и др.Мы предлагаем только лучшие товары из Европы и США.
+                    Работаем напрямую с заводами, тем самым гарантируя отличные цены и сроки доставки.</div>
+            </div>
+            <div class="menu">
+                <div class="list">
+                    <div class="title">Страницы</div>
+                    <a href="" class="item">Главная</a>
+                    <a href="" class="item">Контакты</a>
+                    <a href="" class="item">Каталог</a>
+                    <a href="" class="item">Партнеры</a>
+                    <a href="" class="item">Актуальное</a>
+                    <a href="" class="item">Подбор по автомобилю</a>
+                </div>
+                <div class="list">
+                    <div class="title">Для покупателей</div>
+                    <a href="" class="item">Доставка</a>
+                    <a href="" class="item">Оплата</a>
+                    <a href="" class="item">Возврат</a>
+                    <a href="" class="item">Партнеры</a>
+                    <a href="" class="item">Личный кабинет</a>
+                </div>
+                <div class="list">
+                    <div class="title">Информация</div>
+                    <a href="" class="item">Статьи</a>
+                    <a href="" class="item">Видеообзоры</a>
+                    <a href="" class="item">Бренды</a>
+                    <a href="" class="item">Установочные центры</a>
+                </div>
+                <div class="list">
+                    <div class="title">Правила</div>
+                    <a href="" class="item">Куки</a>
+                    <a href="" class="item">Правила</a>
+                    <a href="" class="item">Правила</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="log-buttons">
+            <a href="" class="button">вход</a>
+            <a href="" class="button registration-button">регистрация</a>
+        </div>
+        <div class="copyright">© 2022 UrbanRacers</div>
+    </footer>
 </body>
+<script src="../libraries/jquery-3.7.0.min.js"></script>
+<script src="../libraries/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".news-container", {
+        allowTouchMove: false,
+        spaceBetween: 10,
+        freeMode: true,
+        slidesPerView: "auto",
+        direction: 'vertical',
+        watchOverflow: false,
+        cssMode: true,
+        breakpoints: {
+            730: {
+                cssMode: false,
+                direction: 'horizontal',
+                allowTouchMove: true,
+            },
+        on: 
+        {
+            breakpoint: (function()
+            {
+                console.log('Byga')
+            }, 730)
+        }
+        }
+    });
+</script>
+<script>
+    $('.news-banner .news-container .news-card:nth-child(n+3)').addClass('invisible')
+
+    $('.news-banner .news-container .more-button').click(function () {
+        $(this).parent().children('.news-card.invisible').first().removeClass('invisible')
+        $(this).parent().children('.news-card.invisible').first().removeClass('invisible')
+        $(this).parent().children('.news-card.invisible').first().removeClass('invisible')
+        $(this).parent().children('.news-card.invisible').first().removeClass('invisible')
+        $(this).parent().children('.news-card.invisible').first().removeClass('invisible')
+        $(this).parent().children('.news-card.invisible').first().removeClass('invisible')
+    })
+</script>
 </html>
