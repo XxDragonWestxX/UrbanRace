@@ -206,9 +206,10 @@ p
     color: var(--main-text-color);
 }
 
-.navbar .navbar-item:nth-child(2)
+.navbar .navbar-item:hover
 {
     color: var(--main-site-color);
+    transition: 0.4s;
 }
 
 .navbar .extra-container
@@ -268,6 +269,95 @@ p
     font-size: 16px;
     font-weight: 700;
     color: white;
+}
+
+.path
+{
+    display: flex;
+    border: 1px solid var(--main-site-color);
+    border-left: none;
+    border-right: none;
+    gap: 12px;
+    padding: 8px;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 22px 0;
+}
+
+.path .item
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #667085;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.path .item:not(:last-child)::after
+{
+    display: flex;
+    content: '';
+    background-image: url(../images/icons/arrow-right-light.svg);
+    height: 16px;
+    width: 16px;
+    background-position: center;
+}
+
+header:has(.path) .navbar
+{
+    margin-bottom: 0;
+}
+
+header .back-button
+{
+    display: none;
+    align-items: center;
+    color: var(--main-site-color);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-top: 16px;
+    height: 24px;
+}
+
+header .back-button::before
+{
+    display: flex;
+    content: '';
+    mask-image: url(../images/icons/arrow-right.svg);
+    -webkit-mask-image: url(../images/icons/arrow-right.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+    background-color: var(--main-site-color);
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+    transform: rotate(180deg);
+}
+
+.fixed-button
+{
+    display: none;
+    position: fixed;
+    height: 52px;
+    background-color: var(--main-site-color);
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 10;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
 }
 
 @media screen and (max-width:1200px) {
@@ -348,6 +438,21 @@ p
         margin-left: 10px;
         margin-right: 10px;
         width: calc(100vw - 20px);
+    }
+
+    .path
+    {
+        display: none;
+    }
+
+    header .back-button
+    {
+        display: flex;
+    }
+
+    .fixed-button
+    {
+        display: flex;
     }
 }
 

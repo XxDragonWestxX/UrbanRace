@@ -14,6 +14,15 @@
     <link rel="stylesheet" href="../libraries/swiper-bundle.min.css">
     <title>Document</title>
 </head>
+<style>
+    @media screen and (max-width: 900px) {
+        .news-banner
+        {
+        display: none !important;
+        }   
+    }
+</style>
+<div class="fixed-button">Продолжить</div>
 <body>
     <header>
         <div class="sub-header">
@@ -33,7 +42,7 @@
                     <p>Магазин<br>автотюнинга</p>
                 </a>
                 <a href="../Pages/Main-page.html" class="navbar-item">Главная</a>
-                <a href="" class="navbar-item">Каталог</a>
+                <a href="../Pages/Catalog-catigories-page.html" class="navbar-item">Каталог</a>
                 <a href="" class="navbar-item">Информация</a>
                 <a href="" class="navbar-item">Еще...</a>
                 <div class="extra-container">
@@ -44,8 +53,15 @@
                 </div>
             </div>
         </div>
+        <div class="content-container">
+            <div class="path">
+                <div class="item">Главная</div>
+                <div class="item">Категории товаров</div>
+            </div>
+            <div class="back-button">Назад</div>
+        </div>
     </header>
-    <div class="content-container catigories-banner">
+    <div class="content-container catigories-banner" style="margin-top: 0;">
         <div class="vertical-container">
             <div class="text-container">
                 <div class="title">Категории товаров</div>
