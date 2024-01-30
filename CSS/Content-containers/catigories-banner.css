@@ -272,7 +272,7 @@
         display: none;
     }
 
-    .catigories-banner:not(:has(.catigories-container.all-catigories-view)) .catigories-container .center-container
+    .catigories-banner .catigories-container .center-container
     {
         width: 535px;
     }
