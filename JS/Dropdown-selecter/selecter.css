@@ -23,7 +23,6 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: calc(100%);
 }
 
 .dropdown > .item-list > .item
@@ -38,6 +37,7 @@
     font-weight: 600;
     line-height: 18px;
     width: 100%;
+    border: none;
 }
 
 .dropdown > .item-list > .item:last-child
@@ -102,6 +102,12 @@
     opacity: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
+}
+
+.dropdown:has(.lounch-container .louncher:checked)
+{
+    z-index: 1;
 }
 
 .dropdown:has(.lounch-container .louncher:checked)::before
@@ -119,6 +125,7 @@
 .dropdown:has(.lounch-container .louncher:checked) .item-list
 {
     display: flex;
+    top: calc(100% - 1px);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     border: 1px solid var(--main-site-color);

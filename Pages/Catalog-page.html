@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../CSS/colors.css">
     <link rel="stylesheet" href="../CSS/fonts.css">
     <link rel="stylesheet" href="../CSS/Content-containers/catalog-container.css">
-    <link rel="stylesheet" href="../JS/Dropdown-selecter/slecter.css">
+    <link rel="stylesheet" href="../JS/Dropdown-selecter/selecter.css">
     <title>Document</title>
 </head>
 
@@ -154,5 +154,12 @@
         <div class="products"></div>
     </div>
 </body>
-
+<script href="../libraries/jquery-3.7.0.min.js"></script>
+<script>
+    $('.item').click(function()
+    {
+        $(this).addClass('b')
+    })
+</script>
+<script href="../JS/Dropdown-selecter/selecter.js"></script>
 </html>
