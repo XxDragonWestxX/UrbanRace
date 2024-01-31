@@ -8,6 +8,7 @@
     border-radius: 4px;
     background: #FEFEFE;
     gap: 15px;
+    margin-bottom: 100px;
 }
 
 .catalog-container .filters > .title
@@ -115,7 +116,7 @@
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-color: var(--main-site-color);
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .catalog-container .filters > .line-filter > .line-slider > .end-point
@@ -134,8 +135,119 @@
     margin-top: 15px;
 }
 
-.min-max-dropdown-filters
+.catalog-container .filters > .min-max-dropdown-filters
 {
     display: flex;
     gap: 17px;
+}
+
+.catalog-container .filters > .dropdown-filter.car-filter .select img,
+.catalog-container .filters > .dropdown-filter.car-filter .item img
+{
+    margin-right: 10px;
+}
+
+.catalog-container .filters > .dropdown-filter.car-filter .select,
+.catalog-container .filters > .dropdown-filter.car-filter .item
+{
+    color: #121212 !important;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.catalog-container .filters > .dropdown-filter.car-filter .select span,
+.catalog-container .filters > .dropdown-filter.car-filter .item span
+{
+    font-weight: 700;
+}
+
+.catalog-container .filters > .simple-checkbox-filter
+{
+    display: flex;
+}
+
+.catalog-container .filters > .checkbox-container
+{
+    position: relative;
+    display: flex;
+    margin-right: 8px;
+}
+
+.catalog-container .filters > .checkbox-container .checkbox-decorator
+{
+    display: flex;
+    height: 20px;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--input-border-default);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+
+.catalog-container .filters > .checkbox-container:has(input[type='checkbox']:checked) .checkbox-decorator
+{
+    background-color: var(--main-site-color);
+    transition: .2s;
+}
+
+.catalog-container .filters > .checkbox-container:has(input[type='checkbox']:checked) .checkbox-decorator::after
+{
+    content: '';
+    height: 100%;
+    width: 100%;
+    mask-image: url(../../images/icons/check-mark.svg);
+    -webkit-mask-image: url(../../images/icons/check-mark.svg);
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-color: white;
+}
+
+.catalog-container .filters > .checkbox-container input[type="checkbox"]
+{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.catalog-container .filters > .radio-filters
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.catalog-container .filters > .radio-filters .radio-container
+{
+    position: relative;
+    padding: 12px 24px;
+    color: #8A8E85;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.21px;
+    border-radius: 4px;
+}
+
+.catalog-container .filters > .radio-filters .radio-container input[type="radio"]
+{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.catalog-container .filters > .radio-filters .radio-container:has(input[type='radio']:checked)
+{
+    background-color: var(--main-site-color);
+    color: #F5F5F5;
+    font-weight: 700;
 }
