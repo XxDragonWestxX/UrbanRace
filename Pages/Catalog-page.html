@@ -256,7 +256,7 @@
                 <div class="checkbox-container">
                     <div class="checkbox-decorator"></div>
                     <input name="checkbox" type="checkbox">
-                    <label for="checkbox">Чекбокс</label>
+                    <label>Чекбокс</label>
                 </div>
             </div>
             <div class="filter-title">Заголовок выпадающих списков</div>
@@ -280,19 +280,26 @@
             <div class="radio-filters">
                 <div class="radio-container">
                     <input name="radio" checked type="radio">
-                    <label for="radio">Переключатель 1</label>
+                    <label>Переключатель 1</label>
                 </div>
                 <div class="radio-container">
                     <input name="radio" type="radio">
-                    <label for="radio">Переключатель 2</label>
+                    <label>Переключатель 2</label>
                 </div>
             </div>
             <div class="form-container">
-                <div class="clear-button"></div>
-                <div class="submit-button"></div>
+                <input type="button" value="Сбросить">
+                <input type="submit" value="Применить">
             </div>
         </form>
-        <div class="products"></div>
+        <div class="products-container">
+            <div class="products">
+                <div class="product-card"></div>
+            </div>
+            <div class="pagination">
+
+            </div>
+        </div>
     </div>
 </body>
 <script src="../libraries/jquery-3.7.0.min.js"></script>
